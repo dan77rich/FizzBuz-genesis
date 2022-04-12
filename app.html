@@ -2,7 +2,7 @@
 <html lang="en" class="h-100">
 
 <head>
-    <title>APP NAME: Coding Challenge By Dan Richardson</title>
+    <title>Fizz Buzz: Coding Challenge By Dan Richardson</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -41,7 +41,7 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav me-auto mb-2 mb-md-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">App Name</a>
+                        <a class="nav-link active" aria-current="page" href="#">Fizz Buzz</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="index.html">Home</a>
@@ -62,23 +62,38 @@
             </div>
         </div>
     </nav>
+    <!-- Live life one loop at a time. A javascript coding exercise using loops. Write a program the displays the numbers from 0 to 100. Display the even numbers in BOLD. -->
 
     <main class="flex-shrink-0">
         <div class="container mt-5">
-            <h1>To Do List</h1>
+            <h1 class="border border-dark">Fizz Buzz: A Coding Challenge</h1>
+            <p>Live life one loop at a time. A javascript coding exercise using loops. Write a program the displays the
+                numbers from 0 to 100. Display the even numbers in BOLD.</p>
+            <h2>Instructions</h2>
+            <p>Enter a starting value and an ending value. Press the button and the values will appear.</p>
+            <hr>
             <div class="row align-item-end">
                 <div class="col">
-                    <label for="txtMessage" class="form-label">Item</label>
-                    <input type="text" name="txtMessage" class="form-control" id="txtmessage" placeholder="Enter Item">
+                    <label class="form-label" for="fizzValue">Fizz Value</label>
+                    <input class="form-control" type="number" id="fizzValue" value="3">
                 </div>
                 <div class="col">
-                    <button id="btnSubmit" class="btn btn-primary">Display Message</button>
+                    <label class="form-label" for="buzzValue">Enter a End Value</label>
+                    <input class="form-control" type="number" id="buzzValue" value="5">
+                </div>
+                <div class="col-12 text-end mt-3">
+                    <button id="btnSubmit" class="btn btn-dark">FizzBuzz</button>
                 </div>
             </div>
+
+            <h2 class="mt-5">Results</h2>
+            <hr>
+
             <div class="messageStyle mt-5">
-                <ol id="results" class="list-group list-group-numbered">
+                <div id="results" class="row row-cols-5 row-cols-md-10">
                     <!-- My items will go here -->
-                </ol>
+
+                </div>
             </div>
         </div>
     </main>
@@ -117,7 +132,7 @@
     <!-- Custom JS -->
     <script src="/js/site.js"></script>
     <script>
-        document.getElementById("btnSubmit").addEventListener("click", getMessage);
+        document.getElementById("btnSubmit").addEventListener("click", getValues);
     </script>
 </body>
 

@@ -17,6 +17,7 @@ nav{
 main>.container {
     padding: 60px 15px 0;
     margin-bottom: 5rem;
+    color:rgb(15, 114, 132)
 }
 
 .techicons{
@@ -63,7 +64,14 @@ main>.container {
 }
 
 .messageStyle{
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: red;
+    font-size: 2rem;
+   
+}
+
+.boldItem{
+    font-weight: bolder;
+}
+
+.redItem{
+    color:#f41515
 }
